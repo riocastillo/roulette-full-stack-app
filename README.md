@@ -8,4 +8,4 @@ Made using CSS, Javascript, Node.js, JSON, Express, EJS, MongoDB, and User Authe
 
 
 ## Lessons Learned
-Whew it's hard finishing projects about gambling - cause I don't know anything about that! Regardless of that learning curve, this project taught me a lot about the use of passports.
+Whew... it is hard finishing projects about gambling - cause I don't know anything about that! But regardless of that learning curve, this project taught me a lot about the use of passports and if I had more time available, I'd like to go back to simplify the code a bit more.
