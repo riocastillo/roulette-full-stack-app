@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Tourney:ital,wght@1,100;1,400&display=swap" rel="stylesheet">
+
+    <title>Revenue</title>
+</head>
+<body class="profile">
+    <img src = "notice.png" id="notice">
+    <h1>Data from today's game</h1>
+
+<% messages.forEach(el => {%>
+  <span style="display: none;" id="objectId"><%=el._id%></span>
+    <h2 class="hide">$<%=el.value%></h2>
+    <h2 id="wins">Wins <br><br><%=el.wins%></h2>
+    <h2>Losses<br><br> <%=el.loss%></h2>
+    <h2>Money Lost<br><br> $<%=el.moneyWon%></h2>
+    <h2>Money Won<br><br> $<%=el.moneyLoss%></h2>
+    <%})%>
+    <br><button type="submit" id="reset" name="button">reset data</button>
+    <br><button type="submit" id="logout" name="button"><a href="http://localhost:2211/">logout</button>
+
+<button style="display: none;" type="submit" class="submitBtn">BET</button>
+<button style="display: none;"type="submit" class="resetBtn">RESET</button>
+
+<script src="main.js"></script>
+</body>
+</html>

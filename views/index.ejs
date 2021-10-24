@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Roulette</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sedgwick+Ave+Display&display=swap" rel="stylesheet">
+</head>
+
+<body class="frontBody">
+  <section id="header">
+    <img src="title.png" id="title">
+  </section>
+  <section class="gameBoard">
+    <img src="gamBoard.png">
+    <section id="right">
+      <input type="button" value="red" class="betChoice spinhov" id="red">
+      <input type="button" value="black" class="betChoice spinhov" id="black">
+      <input type="button" value="green" class="betChoice spinhov" id="green">
+      <input type="number" placeholder="place your bet" name="msg" class="betAmount">
+      <input type="hidden" value="" placeholder="BetValue" name="bet" class="betValue">
+      <button type="submit" class="submitBtn">BET</button>
+      <button type="submit" class="resetBtn">RESET</button>
+    </section>
+  </section>
+  <button style="display: none;" type="submit" id="reset" name="button">RESET</button>
+  <section class="results">
+    <h2>Your Balance:<span id="result"> $0</span></h2>
+    <h3 id="who-won"></h3>
+  </section>
+  <section id="owner">
+    <a href="/login"><button type="button" name="button" id="ownerLogIn">Owner Login</button></a>
+  </section>
+
+
+  <script src="main.js"></script>
+</body>
+</html>
